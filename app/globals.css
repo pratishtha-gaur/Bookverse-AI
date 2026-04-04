@@ -733,20 +733,6 @@
   }
 }
 
-/* Clerk Auth Button Overrides */
-.cl-formButtonPrimary {
-  border: none !important;
-  box-shadow: var(--shadow-soft) !important;
-  border-radius: 0.75rem !important;
-  background-color: #212a3b !important;
-  color: white !important;
-}
-
-.cl-formButtonPrimary:hover {
-  background-color: #3d485e !important;
-  box-shadow: var(--shadow-soft-md) !important;
-}
-
 .cl-pricingTableCardDescription {
   margin-top: 12px !important;
 }
@@ -760,40 +746,6 @@
 
 .cl-pricingTableCardContent {
   flex: 1 !important;
-}
-
-/* Clerk Auth Input Fields with Soft Shadow */
-.cl-formFieldInput__identifier,
-.cl-formFieldInput__password,
-.cl-formFieldInput__emailAddress,
-.cl-formFieldInput__firstName,
-.cl-formFieldInput__lastName,
-.cl-formFieldInput {
-  position: relative !important;
-  z-index: 10 !important;
-  border: 1px solid var(--border-subtle) !important;
-  background-color: white !important;
-  box-shadow: var(--shadow-soft-sm) !important;
-  border-radius: 0.75rem !important;
-}
-
-.cl-formFieldInput:focus {
-  border-color: #212a3b !important;
-  box-shadow: var(--shadow-soft), 0 0 0 2px rgba(33, 42, 59, 0.1) !important;
-}
-
-/* Clerk Auth Social Buttons with Soft Shadow */
-.cl-socialButtonsBlockButton,
-.cl-socialButtonsBlockButton__google,
-.cl-socialButtonsBlockButton__facebook {
-  box-shadow: var(--shadow-soft-sm) !important;
-  border-radius: 0.75rem !important;
-  border: 1px solid var(--border-subtle) !important;
-}
-
-.cl-socialButtonsBlockButton:hover {
-  box-shadow: var(--shadow-soft) !important;
-  background-color: var(--bg-secondary) !important;
 }
 
 /* Pricing cards container */
@@ -832,38 +784,6 @@
 /* Subscription panel appear above pricing cards */
 .cl-drawerRoot {
   z-index: 100 !important;
-}
-
-/* Clerk checkout/drawer PRIMARY button text color fix */
-.cl-drawerRoot .cl-formButtonPrimary,
-.cl-modalContent .cl-formButtonPrimary,
-.cl-checkoutForm .cl-formButtonPrimary,
-[data-clerk-component] button[class*='formButtonPrimary'] {
-  color: white !important;
-}
-
-/* Clerk checkout pay button - target primary/solid buttons */
-button[class*='cl-formButtonPrimary'],
-button[class*='cl-button'][data-variant='solid'][data-color='primary'],
-button[class*='cl-button'][data-variant='solid'][data-color='primary'] *,
-.cl-main button[type='submit'][class*='formButtonPrimary'],
-.cl-footer button[class*='formButtonPrimary'] {
-  color: white !important;
-}
-
-/* Global Clerk portal/overlay PRIMARY button fix */
-[id^='cl-'] button[class*='formButtonPrimary'],
-[class^='cl-'] button[class*='formButtonPrimary'],
-.cl-modalBackdrop ~ div button[class*='formButtonPrimary'] {
-  color: white !important;
-}
-
-/* Force white text on Clerk PRIMARY buttons only (not segmented controls, tabs, etc.) */
-[class*='cl-'] button[class*='formButtonPrimary'],
-[class*='cl-'] button[class*='formButtonPrimary'] *,
-button[class*='cl-formButtonPrimary'],
-button[class*='cl-formButtonPrimary'] * {
-  color: white !important;
 }
 
 /* Ensure segmented controls, tabs, and other light buttons have dark text */

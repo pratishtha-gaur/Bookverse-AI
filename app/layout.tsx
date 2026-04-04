@@ -4,6 +4,7 @@ import { IBM_Plex_Serif, Mona_Sans} from "next/font/google";
 
 import "./globals.css";
 import Navbar from "../components/Navbar";
+import { CLERK_AUTH_APPEARANCE_OVERRIDE } from "@/lib/constants";
 
 const ibmPlexSerif= IBM_Plex_Serif({
   variable: "--font-ibm-plex-serif",
@@ -34,7 +35,7 @@ export default function RootLayout({
       className={`${ibmPlexSerif.variable} ${monaSans.variable} relative font-sans h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <ClerkProvider>
+        <ClerkProvider appearance={{ elements: CLERK_AUTH_APPEARANCE_OVERRIDE }}>
           <Navbar />
           {children}
         </ClerkProvider>
